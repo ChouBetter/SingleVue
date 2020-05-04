@@ -15,10 +15,13 @@
                         message: {
                             hello: 'hello world'
                         },
-                        message1: "message1",
-                        "message.2": "message.2",
+                        message1: "[message1]",
+                        "message.2": "[message.2]",
                         message3: {
-                            "subMsg.1.2.3": "subMsg.1.2.3"
+                            "subMsg.1.2.3": "[subMsg.1.2.3]"
+                        },
+                        "message4.5": {
+                            aaa: "[aaa]"
                         }
                     },
                     ja: {
@@ -59,6 +62,7 @@
         <p>{{ $t("message1") }}</p>
         <p>{{ $t("message.2") }}</p>
         <p>{{ $t("message3.subMsg.1.2.3") }}</p>
+        <p>{{ $t("message4.5.aaa") }}</p>
     </div>
 </body>
 
